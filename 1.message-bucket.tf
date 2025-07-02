@@ -1,6 +1,6 @@
 
 resource "aws_s3_bucket" "messages" {
-  bucket = "messages-bucket-${random_pet.name.id}"
+  bucket = "messages-bucket"
   force_destroy = true
 
   tags = {
@@ -8,8 +8,4 @@ resource "aws_s3_bucket" "messages" {
     Environment = "Production"
   }
 }
-#random_string with prefix "name" to generate a unique bucket name
-#need bucket prefix to avoid conflicts
-resource "random_pet" "name" {
-  prefix = "messages-bucket-"
-}
+
