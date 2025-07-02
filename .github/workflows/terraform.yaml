@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: test-amazon-q
+        working-directory: ./
 
     steps:
     # Checkout the repository to the GitHub Actions runner
