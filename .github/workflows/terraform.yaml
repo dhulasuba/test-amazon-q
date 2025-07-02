@@ -18,7 +18,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: terraform-folder
+        working-directory: test-amazon-q
 
     steps:
     # Checkout the repository to the GitHub Actions runner
